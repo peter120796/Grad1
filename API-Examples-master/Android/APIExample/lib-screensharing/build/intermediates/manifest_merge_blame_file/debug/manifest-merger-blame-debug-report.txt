@@ -1,0 +1,54 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.agora.rtc.ss" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="19"
+6-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="29" />
+7-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:5:5-67
+9-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:5:22-64
+10    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+10-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:6:5-79
+10-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:6:22-76
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:7:5-81
+11-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:7:22-78
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:8:5-77
+12-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:8:22-74
+13
+14    <application>
+14-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:10:5-24:19
+15        <activity
+15-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:11:9-15:64
+16            android:name="io.agora.rtc.ss.impl.ScreenCapture$ScreenCaptureAssistantActivity"
+16-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:12:13-78
+17            android:process=":screensharingsvc"
+17-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:13:13-48
+18            android:screenOrientation="fullUser"
+18-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:14:13-49
+19            android:theme="@android:style/Theme.Translucent" />
+19-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:15:13-61
+20
+21        <service
+21-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:16:9-23:19
+22            android:name="io.agora.rtc.ss.impl.ScreenSharingService"
+22-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:17:13-54
+23            android:foregroundServiceType="mediaProjection"
+23-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:18:13-60
+24            android:process=":screensharingsvc" >
+24-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:19:13-48
+25            <intent-filter>
+25-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:20:13-22:29
+26                <action android:name="android.intent.action.screenshare" />
+26-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:21:17-76
+26-->C:\Users\petot\Downloads\API-Examples-master\API-Examples-master\Android\APIExample\lib-screensharing\src\main\AndroidManifest.xml:21:25-73
+27            </intent-filter>
+28        </service>
+29    </application>
+30
+31</manifest>
